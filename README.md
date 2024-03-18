@@ -1,6 +1,10 @@
 # kanban
 
+## Demo 
 
+![](https://github.com/Angel-Raa/vue-kanban/blob/main/public/docs/cap-1.png)
+
+![](https://github.com/Angel-Raa/vue-kanban/blob/main/public/docs/cap-2.png)
 
 ## Project Setup
 
