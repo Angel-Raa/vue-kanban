@@ -37,13 +37,13 @@
   <IModal
     :is-modal-active="isDeleteTaskModalActive"
     :heading="`${ACTIONS.DELETE.split('_').join(' ')}`"
-    @close-modal="toggleDeleteTaskModal"
+    @close-modal="toggleDeleteTaskModal()"
   >
     <div class="p-2">
       <span>¿Estás seguro de que quieres eliminar? {{ task && task.name }}?</span>
       <div class="flex justify-around pt-3">
         <button @click="toggleDeleteTaskModal()">No</button>
-        <button @click="deleteTask">Yes</button>
+        <button @click="deleteTask()">Yes</button>
       </div>
     </div>
   </IModal>

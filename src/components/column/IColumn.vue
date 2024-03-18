@@ -14,7 +14,7 @@
         <div class="flex gap-4 flex-2 ">
           <button @click="setSelectedColumn(ACTIONS.UPDATE, column)">&#9998;</button>
           <button class="font-bold" @click="setSelectedColumn(ACTIONS.DELETE, props.column)">
-            &#88;
+            &#88; 
           </button>
           <button class="text-2xl font-bold" @click="addTask(column.columnId)">+</button>
         </div>
@@ -42,7 +42,7 @@
   </IModal>
   <IModal
     :is-modal-active="isDeleteColumnModalActive"
-    :heading="`${ACTIONS.DELETE.split('_').join(' ')}`"
+    :heading="`${ACTIONS.DELETE.split('_').join('')}`"
     @close-modal="toggleDeleteColumnModal"
   >
     <div class="p-2">
@@ -56,7 +56,7 @@
 
   <IModal
     :is-modal-active="isTaskModalActive"
-    :heading="`${ACTIONS.ADD_TASK.split('_').join(' ')}`"
+    :heading="`${ACTIONS.ADD_TASK.split('_').join('')}`"
     @close-modal="toggleTaskModal()"
   >
     <TaskForm

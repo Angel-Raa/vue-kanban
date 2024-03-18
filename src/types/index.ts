@@ -6,7 +6,6 @@ export type Task = z.infer<typeof taskSchema>
 export type ColumnWithTasks = Column & { tasks: Task[] }
 export enum TYPES {
   COLUMN = 'COLUMN',
-  ROW = 'ROW',
   TASK = 'TASK'
 }
 

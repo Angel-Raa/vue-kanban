@@ -82,7 +82,7 @@ export const moveTask = (
   targetColumnId: Column['columnId'],
   targetTaskId?: Task['taskId']
 ): void => {
-  let currentTask: Task | undefined
+  let currentTask: Task 
   let currentTaskIndex: number | undefined
 
   // Buscar la tarea en la columna actual y obtener su índice
@@ -146,6 +146,5 @@ export default {
   updateTask,
   deleteTask,
   moveTask,
-  moveColumn,
-  KEY
+  moveColumn
 }
